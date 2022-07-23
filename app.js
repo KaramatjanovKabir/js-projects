@@ -96,15 +96,10 @@ const menu = [
         link: 'https://schet1.netlify.app',
         git_source: "",
         img: "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        // about: "Random Number"
-
-      },
-      
+      },  
   ];
-  // get parent element
   const sectionCenter = document.querySelector(".section-center");
   const btnContainer = document.querySelector(".btn-container");
-  // display all items when page loads
   window.addEventListener("DOMContentLoaded", function () {
   diplayMenuItems(menu);
   displayMenuButtons();
@@ -126,8 +121,6 @@ const menu = [
     </article> `;
   });
   displayMenu = displayMenu.join("");
-  // console.log(displayMenu);
-  
   sectionCenter.innerHTML = displayMenu;
   }
   function displayMenuButtons() {
@@ -155,10 +148,8 @@ const menu = [
   
   filterBtns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
-      // console.log(e.currentTarget.dataset);
       const category = e.currentTarget.dataset.id;
       const menuCategory = menu.filter(function (menuItem) {
-        // console.log(menuItem.category);
         if (menuItem.category === category) {
           return menuItem;
         }
