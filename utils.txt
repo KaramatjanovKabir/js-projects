@@ -1,5 +1,4 @@
-<!-- links -->
-      <ul class="links">
+ <ul class="links">
         <li>
           <a href="index.html">home</a>
         </li>
@@ -13,7 +12,6 @@
           <a href="contact.html">contact</a>
         </li>
       </ul>
-      <!-- social media -->
       <ul class="social-icons">
         <li>
           <a href="https://www.twitter.com">
